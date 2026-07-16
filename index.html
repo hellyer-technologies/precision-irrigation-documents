@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Precision 16 - Documentation</title>
+<style>
+  :root { --accent:#2D9CDB; --primary:#2E9E5B; --dark:#263544; --muted:#5c6f82; --line:#d7dee5; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { font-family:"Helvetica Neue",Helvetica,Arial,sans-serif; color:#1c2733;
+         background:#f4f7fa; line-height:1.5; padding:6vh 5vw; }
+  .wrap { max-width:640px; margin:0 auto; }
+  .company { font-size:12px; letter-spacing:.18em; text-transform:uppercase; color:var(--muted); }
+  h1 { font-size:34px; color:var(--dark); margin:.1em 0 .05em; }
+  .doctitle { font-size:18px; color:var(--accent); font-weight:600; }
+  .rule { width:96px; height:4px; background:var(--primary); border-radius:2px; margin:16px 0; }
+  .applies { font-size:14px; color:var(--muted); margin-bottom:28px; }
+  .applies b { color:var(--dark); }
+  .cards { display:flex; flex-direction:column; gap:14px; }
+  .card { display:block; text-decoration:none; background:#fff; border:1px solid var(--line);
+          border-left:5px solid var(--accent); border-radius:10px; padding:18px 20px;
+          transition:box-shadow .12s ease; }
+  .card:hover { box-shadow:0 4px 16px rgba(38,53,68,.12); }
+  .card-title { font-size:19px; color:var(--dark); font-weight:600; }
+  .card-sub { font-size:13px; color:var(--muted); margin-top:2px; }
+  .previous { margin-top:34px; }
+  .previous h2 { font-size:14px; color:var(--muted); text-transform:uppercase;
+                 letter-spacing:.08em; border-bottom:1px solid var(--line);
+                 padding-bottom:6px; margin-bottom:10px; }
+  .previous ul { list-style:none; font-size:13px; }
+  .previous li { padding:3px 0; color:var(--muted); }
+  .previous a { color:var(--accent); }
+  footer { margin-top:40px; padding-top:12px; border-top:1px solid var(--line);
+           font-size:12px; color:var(--muted); }
+  @media (prefers-color-scheme: dark) {
+    body { background:#12191f; color:#e6edf3; }
+    h1, .card-title, .applies b { color:#f2f6fa; }
+    .card { background:#1b2530; border-color:#2a3742; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="company">Hellyer Technologies</div>
+    <h1>Precision&nbsp;16</h1>
+    <div class="doctitle">Documentation</div>
+    <div class="rule"></div>
+    <p class="applies">For controllers running <b>firmware 0.2.0</b> &middot; July 2026</p>
+
+    <div class="cards">
+      <a class="card" href="quick-setup-guide.pdf">
+        <div class="card-title">Quick Setup Guide</div>
+        <div class="card-sub">PDF &middot; opens in your browser</div>
+      </a>
+      <a class="card" href="user-guide.pdf">
+        <div class="card-title">User Guide</div>
+        <div class="card-sub">PDF &middot; opens in your browser</div>
+      </a>
+    </div>
+
+    <footer>Hellyer Technologies &middot; Precision Control. Proven Reliability.</footer>
+  </div>
+</body>
+</html>
